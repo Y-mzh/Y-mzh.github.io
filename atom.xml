@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Yusen&#39;s Blog</title>
-  <icon>https://www.gravatar.com/avatar/f784d688bd801ae310df8273112b372d</icon>
+  <title>Mzh&#39;s Blog</title>
+  
   
   <link href="/atom.xml" rel="self"/>
   
@@ -10,8 +10,8 @@
   <id>http://yoursite.com/</id>
   
   <author>
-    <name>麻增辉</name>
-    <email>16601126881@163.com</email>
+    <name>Mzh&#39;s</name>
+    
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
