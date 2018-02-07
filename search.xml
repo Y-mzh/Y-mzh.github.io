@@ -23,9 +23,9 @@
   
     
     <entry>
-      <title><![CDATA[tags]]></title>
-      <url>/tags/index.html</url>
-      <content type="html"></content>
+      <title><![CDATA[About Me]]></title>
+      <url>/about/index.html</url>
+      <content type="html"><![CDATA[<h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><h3 id="喜欢尝试新事物，对小众的东西也有特别的兴趣。"><a href="#喜欢尝试新事物，对小众的东西也有特别的兴趣。" class="headerlink" title="喜欢尝试新事物，对小众的东西也有特别的兴趣。"></a>喜欢尝试新事物，对小众的东西也有特别的兴趣。</h3>]]></content>
     </entry>
     
     <entry>
@@ -35,9 +35,9 @@
     </entry>
     
     <entry>
-      <title><![CDATA[About Me]]></title>
-      <url>/about/index.html</url>
-      <content type="html"><![CDATA[<h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><h3 id="喜欢尝试新事物，对小众的东西也有特别的兴趣。"><a href="#喜欢尝试新事物，对小众的东西也有特别的兴趣。" class="headerlink" title="喜欢尝试新事物，对小众的东西也有特别的兴趣。"></a>喜欢尝试新事物，对小众的东西也有特别的兴趣。</h3>]]></content>
+      <title><![CDATA[tags]]></title>
+      <url>/tags/index.html</url>
+      <content type="html"></content>
     </entry>
     
   
