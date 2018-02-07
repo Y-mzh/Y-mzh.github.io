@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2018-02-07T12:34:18.215Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="https://y-mzh.github.io/"/>
+  <updated>2018-02-07T14:30:08.259Z</updated>
+  <id>https://y-mzh.github.io/</id>
   
   <author>
     <name>Mzh&#39;s</name>
@@ -17,9 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Hexo+GithubPage搭建个人博客（Windows）</title>
+    <link href="https://y-mzh.github.io/Git/hexo-Git/"/>
+    <id>https://y-mzh.github.io/Git/hexo-Git/</id>
+    <published>2018-02-07T13:18:34.810Z</published>
+    <updated>2018-02-07T14:30:08.259Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ol><li><h5 id="安装node-Js"><a href="#安装node-Js" class="headerlink" title="安装node.Js"></a>安装node.Js</h5><p>去 NodeJs 官网下载相应版本，进行安装即可。可以通过node -v的命令来测试NodeJS是否安装成功。</p></li><li><h5 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h5><p>去 Git 官网下载相应版本，进行安装即可。 可以通过git –version的命令来测试git是否安装成功。</p></li><li><h5 id="注册Github账号"><a href="#注册Github账号" class="headerlink" title="注册Github账号"></a>注册Github账号</h5><p>去 Github 官网进行注册。 注册完之后记得添加 SSH Key。<br>这个 SSH Key是一个认证，让github识别绑定这台机器，允许这台机器提交。执行如下命令：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ~/. ssh</span><br></pre></td></tr></table></figure><p>~这个符号，表示在用户目录下，如果提示：No such file or directory 说明是第一次使用                   git。<br>生产新的SSH Key配置，在Git Bash执行代码：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;此处写邮箱地址&quot;</span><br></pre></td></tr></table></figure><p>成功后会生成两个文件id_rsa 以及id_rsa.pub。然后添加在github上</p></li><li><h5 id="搭建博客"><a href="#搭建博客" class="headerlink" title="搭建博客"></a>搭建博客</h5><p>1.<strong>安装Hexo:</strong><br>  在本地新建一个Hexo文件夹，文件右键，选择Git Bash。<br>  输入指令安装hexo：</p>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo</span><br></pre></td></tr></table></figure><p>  等安装完毕，通过输入hexo的命令来测试Hexo是否安装成功,成功如下图展示:<br>  <img src="../GitImg/githexo.jpg" alt="" title="安装Hexo"><br>2.<strong>初始化Hexo：</strong></p>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init hexo</span><br></pre></td></tr></table></figure><p>  初始化成功会显示Start blogging with Hexo!<br>  这时在你刚才创建的Hexo里面会多出一个hexo文件 。<br>  进入到hexo目录，右键，选择Git Bash，输入下面指令安装依赖：</p>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure><p> 部署形成文件：</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure><p> 运行hexo服务</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure><p> 打开浏览器，输入<a href="http://localhost:4000/便可看到默认的博客。" target="_blank" rel="noopener">http://localhost:4000/便可看到默认的博客。</a></p><p>3.<strong>配置githubPage</strong><br>  登录Github，点击”New repository”，新建一个版本库。<br>  输入仓库名：你的Github名称.github.io。然后点击Create repository。<br>  <strong>注意：这边的创建名字，一定要用的github的用户名，不然显示不出来，因为githubPage只能你的用户名。</strong><br>4.<strong>启用GitHub Page</strong><br>  进入项目，点击Settings，如下图：<br>  <img src="../../img/git-setting.jpg" alt="" title="设置"><br>  进入设置界面，下拉找到Choose a theme，如下图：<br>  <img src="../../img/chooseTheme.jpg" alt="" title="设置"><br>  选择一个随意模版，点击”Select theme”,发布github默认生成的一个静态站点。<br>  试着打开自己在github的静态网址，<a href="https://y-mzh.github.io/。">https://y-mzh.github.io/。</a></p><p>5.<strong>将本地hexo项目托管到Github</strong><br>  打开修改hexo目录下配置文件_config.yml。<br>  <img src="../../img/config.jpg" alt="" title="设置"><br>  编辑最后面的deploy属性，加入代码：</p>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">    type: git</span><br><span class="line">repository: git@github.com:Y-mzh/Y-mzh.github.io.git</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure><p>  type使用是git。<br>  repository属性改成你的刚才创建仓库git地址。<br>  分支branch填写master。<br>6.<strong>网站的配置文件，这里列举部分关键配置：</strong></p>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: Dududzai’s Blog //网站的标题</span><br><span class="line">subtitle: life is struggle //副标题</span><br><span class="line">description: life is struggle //描述</span><br><span class="line">author: examble #作者信息</span><br><span class="line">avatar: /images/avatar.png //头像，图片位置在相应主题目录下的images</span><br><span class="line">language: zh-Hans //中文简体</span><br><span class="line">email: 85268837@qq.com</span><br><span class="line">timezone:</span><br><span class="line"># Extensions</span><br><span class="line">theme: next //配置主题，这里使用next主题</span><br><span class="line">stylus:</span><br><span class="line">compress: true //自适应布局</span><br><span class="line"># Deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:Y-mzh/Y-mzh.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure><p>7.<strong>安装hexo-deployer-git插件</strong></p>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><p>8.<strong>上传本地的主题到github上</strong></p>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generator //简写 hexo g</span><br><span class="line">hexo deploy //简写 hexo d</span><br></pre></td></tr></table></figure><p>  最后看下，部署到github上的效果！<br>  访问：<a href="https://y-mzh.github.io/">https://y-mzh.github.io/</a></p></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;h5 id=&quot;安装node-Js&quot;&gt;&lt;a href=&quot;#安装node-Js&quot; class=&quot;headerlin
+      
+    
+    </summary>
+    
+      <category term="Git" scheme="https://y-mzh.github.io/categories/Git/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Hello</title>
-    <link href="http://yoursite.com/Java/hello/"/>
-    <id>http://yoursite.com/Java/hello/</id>
+    <link href="https://y-mzh.github.io/Java/hello/"/>
+    <id>https://y-mzh.github.io/Java/hello/</id>
     <published>2018-02-07T11:56:35.519Z</published>
     <updated>2018-02-07T12:34:18.215Z</updated>
     
@@ -34,15 +58,15 @@
     
     </summary>
     
-      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+      <category term="Java" scheme="https://y-mzh.github.io/categories/Java/"/>
     
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/hello-world/"/>
-    <id>http://yoursite.com/hello-world/</id>
+    <link href="https://y-mzh.github.io/hello-world/"/>
+    <id>https://y-mzh.github.io/hello-world/</id>
     <published>2018-02-05T13:43:52.370Z</published>
     <updated>2018-02-05T13:43:52.370Z</updated>
     
