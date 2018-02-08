@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://y-mzh.github.io/"/>
-  <updated>2018-02-08T15:08:03.200Z</updated>
+  <updated>2018-02-08T16:14:31.235Z</updated>
   <id>https://y-mzh.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://y-mzh.github.io/Java/Java%E7%BC%96%E8%AF%91%E7%9A%84%E4%B8%89%E7%A7%8D%E6%96%B9%E5%BC%8F/"/>
     <id>https://y-mzh.github.io/Java/Java编译的三种方式/</id>
     <published>2018-02-08T12:29:16.976Z</published>
-    <updated>2018-02-08T15:08:03.200Z</updated>
+    <updated>2018-02-08T16:14:31.235Z</updated>
     
     <content type="html"><![CDATA[<h3 id="三种编译方式"><a href="#三种编译方式" class="headerlink" title="三种编译方式"></a>三种编译方式</h3><hr><p>Java体系中分三种编译方式：前端编译、即时编译(JIT编译)、静态提前编译(AOT编译)。目前Java体系中主要还是采用前端编译+JIT编译的方式，如JDK中的HotSpot虚拟机；下面简单介绍下三种编译方式的优缺点：</p><h3 id="1-前端编译-Javac编译"><a href="#1-前端编译-Javac编译" class="headerlink" title="1.前端编译(Javac编译)"></a><strong>1.前端编译(Javac编译)</strong></h3><p>通过Javac把Java源码文件（.java）编译成Class文件(.class二进制字节码)的过程；<br>把满足Java语言规范的程序转化为满足JVM规范所要求格式的功能；</p><h4 id="优点"><a href="#优点" class="headerlink" title="优点"></a><strong>优点</strong></h4><ul><li>这阶段的代码优化是指程序编码方面的。</li><li>许多Java语法新特性（语法糖、泛型、内部类等等），是靠前端编译器实现的,而不是依赖虚拟机。</li><li>编译成的Class文件可以直接给JVM解释器解释执行，省去编译时间，加快启动速度。</li></ul><h4 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a><strong>缺点</strong></h4><ul><li>对代码运行效率几乎没有任何优化措施。</li><li>解释执行效率较低。</li></ul><h5 id="前端编译器有：Oracle-javac、Eclipse-JDT中的增量式编译器（ECJ）等。"><a href="#前端编译器有：Oracle-javac、Eclipse-JDT中的增量式编译器（ECJ）等。" class="headerlink" title="前端编译器有：Oracle javac、Eclipse JDT中的增量式编译器（ECJ）等。"></a><strong>前端编译器有：Oracle javac、Eclipse JDT中的增量式编译器（ECJ）等。</strong></h5><hr><h3 id="2-即时编译-JIT编译-后端编译"><a href="#2-即时编译-JIT编译-后端编译" class="headerlink" title="2.即时编译(JIT编译/后端编译)"></a><strong>2.即时编译(JIT编译/后端编译)</strong></h3><p> 通过Java虚拟机（JVM）内置的即时编译器（Just In Time Compiler，JIT编译器）；在运行时把Class文件字节码编译成机器码的过程。</p><h4 id="优点-1"><a href="#优点-1" class="headerlink" title="优点"></a><strong>优点</strong></h4><ul><li>通过在运行时收集监控信息，把代码编译成与本地平台相关的机器码，并进行各种层次的优化。</li><li>可以提高执行效率。</li><li>可以对这个阶段进行JVM调优。</li></ul><h4 id="缺点-1"><a href="#缺点-1" class="headerlink" title="缺点"></a><strong>缺点</strong></h4><ul><li>编译过程占用程序运行时间。</li><li>编译机器码占用内存。</li></ul><h5 id="JIT编译器有：HotSpot虚拟机的C1、C2编译器等。"><a href="#JIT编译器有：HotSpot虚拟机的C1、C2编译器等。" class="headerlink" title="JIT编译器有：HotSpot虚拟机的C1、C2编译器等。"></a><strong>JIT编译器有：HotSpot虚拟机的C1、C2编译器等。</strong></h5><hr><h3 id="3-静态提前编译（AOT编译）"><a href="#3-静态提前编译（AOT编译）" class="headerlink" title="3.静态提前编译（AOT编译）"></a><strong>3.静态提前编译（AOT编译）</strong></h3><p>程序运行前，直接把Java源码文件（.java）编译成机器码的过程。</p><h4 id="优点-2"><a href="#优点-2" class="headerlink" title="优点"></a><strong>优点</strong></h4><ul><li>编译不占用运行时间，可以做一些较耗时的优化，并可加快程序启动。</li><li>把编译的机器码保存到磁盘，不占用内存，并可多次使用。</li></ul><h4 id="缺点-2"><a href="#缺点-2" class="headerlink" title="缺点"></a><strong>缺点</strong></h4><ul><li>Java语言的动态性（如反射）带来了额外的复杂性，影响了静态编译代码的质量。</li><li>静态编译不如JIT编译的质量，这种方式用得比较少。</li></ul><h5 id="静态提前编译器有：JAOTC、GCJ、Excelsior-JET、ART-Android-Runtime-等。"><a href="#静态提前编译器有：JAOTC、GCJ、Excelsior-JET、ART-Android-Runtime-等。" class="headerlink" title="静态提前编译器有：JAOTC、GCJ、Excelsior JET、ART (Android Runtime)等。"></a><strong>静态提前编译器有：JAOTC、GCJ、Excelsior JET、ART (Android Runtime)等。</strong></h5><hr>]]></content>
     
