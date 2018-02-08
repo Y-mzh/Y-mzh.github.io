@@ -11,30 +11,34 @@
 <h4 id="优点"><a href="#优点" class="headerlink" title="优点"></a><strong>优点</strong></h4><ul>
 <li>这阶段的代码优化是指程序编码方面的。</li>
 <li>许多Java语法新特性（语法糖、泛型、内部类等等），是靠前端编译器实现的,而不是依赖虚拟机。</li>
-<li>编译成的Class文件可以直接给JVM解释器解释执行，省去编译时间，加快启动速度。<h4 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a><strong>缺点</strong></h4></li>
-<li>对代码运行效率几乎没有任何优化措施。</li>
-<li>解释执行效率较低。<h5 id="前端编译器有：Oracle-javac、Eclipse-JDT中的增量式编译器（ECJ）等。"><a href="#前端编译器有：Oracle-javac、Eclipse-JDT中的增量式编译器（ECJ）等。" class="headerlink" title="前端编译器有：Oracle javac、Eclipse JDT中的增量式编译器（ECJ）等。"></a><strong>前端编译器有：Oracle javac、Eclipse JDT中的增量式编译器（ECJ）等。</strong></h5></li>
+<li>编译成的Class文件可以直接给JVM解释器解释执行，省去编译时间，加快启动速度。</li>
 </ul>
-<hr>
+<h4 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a><strong>缺点</strong></h4><ul>
+<li>对代码运行效率几乎没有任何优化措施。</li>
+<li>解释执行效率较低。</li>
+</ul>
+<h5 id="前端编译器有：Oracle-javac、Eclipse-JDT中的增量式编译器（ECJ）等。"><a href="#前端编译器有：Oracle-javac、Eclipse-JDT中的增量式编译器（ECJ）等。" class="headerlink" title="前端编译器有：Oracle javac、Eclipse JDT中的增量式编译器（ECJ）等。"></a><strong>前端编译器有：Oracle javac、Eclipse JDT中的增量式编译器（ECJ）等。</strong></h5><hr>
 <h3 id="2-即时编译-JIT编译-后端编译"><a href="#2-即时编译-JIT编译-后端编译" class="headerlink" title="2.即时编译(JIT编译/后端编译)"></a><strong>2.即时编译(JIT编译/后端编译)</strong></h3><p> 通过Java虚拟机（JVM）内置的即时编译器（Just In Time Compiler，JIT编译器）；在运行时把Class文件字节码编译成机器码的过程。</p>
 <h4 id="优点-1"><a href="#优点-1" class="headerlink" title="优点"></a><strong>优点</strong></h4><ul>
 <li>通过在运行时收集监控信息，把代码编译成与本地平台相关的机器码，并进行各种层次的优化。</li>
 <li>可以提高执行效率。</li>
-<li>可以对这个阶段进行JVM调优。<h4 id="缺点-1"><a href="#缺点-1" class="headerlink" title="缺点"></a><strong>缺点</strong></h4><ul>
+<li>可以对这个阶段进行JVM调优。</li>
+</ul>
+<h4 id="缺点-1"><a href="#缺点-1" class="headerlink" title="缺点"></a><strong>缺点</strong></h4><ul>
 <li>编译过程占用程序运行时间。</li>
-<li>编译机器码占用内存。<h5 id="JIT编译器有：HotSpot虚拟机的C1、C2编译器等。"><a href="#JIT编译器有：HotSpot虚拟机的C1、C2编译器等。" class="headerlink" title="JIT编译器有：HotSpot虚拟机的C1、C2编译器等。"></a><strong>JIT编译器有：HotSpot虚拟机的C1、C2编译器等。</strong></h5></li>
+<li>编译机器码占用内存。</li>
 </ul>
-</li>
-</ul>
-<hr>
+<h5 id="JIT编译器有：HotSpot虚拟机的C1、C2编译器等。"><a href="#JIT编译器有：HotSpot虚拟机的C1、C2编译器等。" class="headerlink" title="JIT编译器有：HotSpot虚拟机的C1、C2编译器等。"></a><strong>JIT编译器有：HotSpot虚拟机的C1、C2编译器等。</strong></h5><hr>
 <h3 id="3-静态提前编译（AOT编译）"><a href="#3-静态提前编译（AOT编译）" class="headerlink" title="3.静态提前编译（AOT编译）"></a><strong>3.静态提前编译（AOT编译）</strong></h3><p>程序运行前，直接把Java源码文件（.java）编译成机器码的过程。</p>
 <h4 id="优点-2"><a href="#优点-2" class="headerlink" title="优点"></a><strong>优点</strong></h4><ul>
 <li>编译不占用运行时间，可以做一些较耗时的优化，并可加快程序启动。</li>
-<li>把编译的机器码保存到磁盘，不占用内存，并可多次使用。<h4 id="缺点-2"><a href="#缺点-2" class="headerlink" title="缺点"></a><strong>缺点</strong></h4></li>
-<li>Java语言的动态性（如反射）带来了额外的复杂性，影响了静态编译代码的质量。</li>
-<li>静态编译不如JIT编译的质量，这种方式用得比较少。<h5 id="静态提前编译器有：JAOTC、GCJ、Excelsior-JET、ART-Android-Runtime-等。"><a href="#静态提前编译器有：JAOTC、GCJ、Excelsior-JET、ART-Android-Runtime-等。" class="headerlink" title="静态提前编译器有：JAOTC、GCJ、Excelsior JET、ART (Android Runtime)等。"></a><strong>静态提前编译器有：JAOTC、GCJ、Excelsior JET、ART (Android Runtime)等。</strong></h5></li>
+<li>把编译的机器码保存到磁盘，不占用内存，并可多次使用。</li>
 </ul>
-<hr>
+<h4 id="缺点-2"><a href="#缺点-2" class="headerlink" title="缺点"></a><strong>缺点</strong></h4><ul>
+<li>Java语言的动态性（如反射）带来了额外的复杂性，影响了静态编译代码的质量。</li>
+<li>静态编译不如JIT编译的质量，这种方式用得比较少。</li>
+</ul>
+<h5 id="静态提前编译器有：JAOTC、GCJ、Excelsior-JET、ART-Android-Runtime-等。"><a href="#静态提前编译器有：JAOTC、GCJ、Excelsior-JET、ART-Android-Runtime-等。" class="headerlink" title="静态提前编译器有：JAOTC、GCJ、Excelsior JET、ART (Android Runtime)等。"></a><strong>静态提前编译器有：JAOTC、GCJ、Excelsior JET、ART (Android Runtime)等。</strong></h5><hr>
 ]]></content>
       
         <categories>
@@ -89,29 +93,6 @@
         <categories>
             
             <category> Git </category>
-            
-        </categories>
-        
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Hello]]></title>
-      <url>/Java/hello/</url>
-      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-]]></content>
-      
-        <categories>
-            
-            <category> Java </category>
             
         </categories>
         
