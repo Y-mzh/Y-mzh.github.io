@@ -4,7 +4,7 @@
     
     <entry>
       <title><![CDATA[Material 主题文档]]></title>
-      <url>/Theme/Material%20Theme%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/</url>
+      <url>/Theme/Material%20Theme%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3.html</url>
       <content type="html"><![CDATA[<h3 id="说明文档："><a href="#说明文档：" class="headerlink" title="说明文档："></a>说明文档：</h3><h6 id="请访问-https-material-viosey-com-docs"><a href="#请访问-https-material-viosey-com-docs" class="headerlink" title="请访问 : https://material.viosey.com/docs/#/"></a>请访问 : <a href="https://material.viosey.com/docs/#/" target="_blank" rel="noopener">https://material.viosey.com/docs/#/</a></h6>]]></content>
       
         <categories>
@@ -18,7 +18,7 @@
     
     <entry>
       <title><![CDATA[Java中三种编译方式]]></title>
-      <url>/Java/Java%E7%BC%96%E8%AF%91%E7%9A%84%E4%B8%89%E7%A7%8D%E6%96%B9%E5%BC%8F/</url>
+      <url>/Java/Java%E7%BC%96%E8%AF%91%E7%9A%84%E4%B8%89%E7%A7%8D%E6%96%B9%E5%BC%8F.html</url>
       <content type="html"><![CDATA[<h3 id="三种编译方式"><a href="#三种编译方式" class="headerlink" title="三种编译方式"></a>三种编译方式</h3><hr>
 <p>Java体系中分三种编译方式：前端编译、即时编译(JIT编译)、静态提前编译(AOT编译)。目前Java体系中主要还是采用前端编译+JIT编译的方式，如JDK中的HotSpot虚拟机；下面简单介绍下三种编译方式的优缺点：</p>
 <h3 id="1-前端编译-Javac编译"><a href="#1-前端编译-Javac编译" class="headerlink" title="1.前端编译(Javac编译)"></a><strong>1.前端编译(Javac编译)</strong></h3><p>通过Javac把Java源码文件（.java）编译成Class文件(.class二进制字节码)的过程；<br>把满足Java语言规范的程序转化为满足JVM规范所要求格式的功能；</p>
@@ -66,7 +66,7 @@
     
     <entry>
       <title><![CDATA[Hexo+GithubPage搭建个人博客（Windows）]]></title>
-      <url>/Git/hexo-Git/</url>
+      <url>/Git/hexo-Git.html</url>
       <content type="html"><![CDATA[<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ol>
 <li><h5 id="安装node-Js"><a href="#安装node-Js" class="headerlink" title="安装node.Js"></a>安装node.Js</h5><p>去 NodeJs 官网下载相应版本，进行安装即可。可以通过node -v的命令来测试NodeJS是否安装成功。</p>
 </li>
@@ -90,7 +90,7 @@
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
 <p> 打开浏览器，输入<a href="http://localhost:4000/便可看到默认的博客。" target="_blank" rel="noopener">http://localhost:4000/便可看到默认的博客。</a></p>
 <p>3.<strong>配置githubPage</strong><br>  登录Github，点击”New repository”，新建一个版本库。<br>  输入仓库名：你的Github名称.github.io。然后点击Create repository。<br>  <strong>注意：这边的创建名字，一定要用的github的用户名，不然显示不出来，因为githubPage只能你的用户名。</strong></p>
-<p>4.<strong>启用GitHub Page</strong><br>  进入项目，点击Settings，如下图：<br>  <img src="../../img/git-setting.jpg" alt="" title="设置"><br>  进入设置界面，下拉找到Choose a theme，如下图：<br>  <img src="../../img/chooseTheme.jpg" alt="" title="设置"><br>  选择一个随意模版，点击”Select theme”,发布github默认生成的一个静态站点。<br>  试着打开自己在github的静态网址，<a href="https://y-mzh.github.io/。">https://y-mzh.github.io/。</a></p>
+<p>4.<strong>启用GitHub Page</strong><br>  进入项目，点击Settings，如下图：<br>  <img src="../../img/git-setting.jpg" alt="" title="设置"><br>  进入设置界面，下拉找到Choose a theme，如下图：<br>  <img src="../../img/chooseTheme.jpg" alt="" title="设置"><br>  选择一个随意模版，点击”Select theme”,发布github默认生成的一个静态站点。<br>  试着打开自己在github的静态网址，<a href="https://y-mzh.github.io/。" target="_blank" rel="noopener">https://y-mzh.github.io/。</a></p>
 <p>5.<strong>将本地hexo项目托管到Github</strong><br>  打开修改hexo目录下配置文件_config.yml。<br>  <img src="../../img/config.jpg" alt="" title="设置"><br>  编辑最后面的deploy属性，加入代码：</p>
   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">    type: git</span><br><span class="line">repository: git@github.com:Y-mzh/Y-mzh.github.io.git</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure>
 <p>  type使用是git。<br>  repository属性改成你的刚才创建仓库git地址。<br>  分支branch填写master。<br>6.<strong>网站的配置文件，这里列举部分关键配置：</strong></p>
@@ -99,7 +99,7 @@
   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <p>8.<strong>上传本地的主题到github上</strong></p>
   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generator //简写 hexo g</span><br><span class="line">hexo deploy //简写 hexo d</span><br></pre></td></tr></table></figure>
-<p>  最后看下，部署到github上的效果！<br>  访问：<a href="https://y-mzh.github.io/">https://y-mzh.github.io/</a></p>
+<p>  最后看下，部署到github上的效果！<br>  访问：<a href="https://y-mzh.github.io/" target="_blank" rel="noopener">https://y-mzh.github.io/</a></p>
 </li>
 </ol>
 ]]></content>
@@ -115,7 +115,7 @@
     
     <entry>
       <title><![CDATA[Hello World]]></title>
-      <url>/hello-world/</url>
+      <url>/hello-world.html</url>
       <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
@@ -137,7 +137,7 @@
       <title><![CDATA[About Me]]></title>
       <url>/about/index.html</url>
       <content type="html"><![CDATA[<h3 id="博观而约取-厚积而薄发。"><a href="#博观而约取-厚积而薄发。" class="headerlink" title="博观而约取,厚积而薄发。"></a>博观而约取,厚积而薄发。</h3><hr>
-<h4 id="网址：http-www-baiks-cn"><a href="#网址：http-www-baiks-cn" class="headerlink" title="网址：http://www.baiks.cn"></a>网址：<a href="http://www.baiks.cn" target="_blank" rel="noopener">http://www.baiks.cn</a></h4><h4 id="Git-https-github-com-Y-mzh"><a href="#Git-https-github-com-Y-mzh" class="headerlink" title="Git: https://github.com/Y-mzh"></a>Git: <a href="https://github.com/Y-mzh" target="_blank" rel="noopener">https://github.com/Y-mzh</a></h4><h4 id="联系人：Mzh’s"><a href="#联系人：Mzh’s" class="headerlink" title="联系人：Mzh’s"></a>联系人：Mzh’s</h4><h4 id="邮件：185480677-qq-com"><a href="#邮件：185480677-qq-com" class="headerlink" title="邮件：185480677@qq.com"></a>邮件：185480677@qq.com</h4><h4 id="QQ：-185480677"><a href="#QQ：-185480677" class="headerlink" title="QQ： 185480677"></a>QQ： 185480677</h4>]]></content>
+<h4 id="网址：http-www-baiks-cn"><a href="#网址：http-www-baiks-cn" class="headerlink" title="网址：http://www.baiks.cn"></a>网址：<a href="http://www.baiks.cn">http://www.baiks.cn</a></h4><h4 id="Git-https-github-com-Y-mzh"><a href="#Git-https-github-com-Y-mzh" class="headerlink" title="Git: https://github.com/Y-mzh"></a>Git: <a href="https://github.com/Y-mzh" target="_blank" rel="noopener">https://github.com/Y-mzh</a></h4><h4 id="联系人：Mzh’s"><a href="#联系人：Mzh’s" class="headerlink" title="联系人：Mzh’s"></a>联系人：Mzh’s</h4><h4 id="邮件：185480677-qq-com"><a href="#邮件：185480677-qq-com" class="headerlink" title="邮件：185480677@qq.com"></a>邮件：185480677@qq.com</h4><h4 id="QQ：-185480677"><a href="#QQ：-185480677" class="headerlink" title="QQ： 185480677"></a>QQ： 185480677</h4>]]></content>
     </entry>
     
     <entry>
