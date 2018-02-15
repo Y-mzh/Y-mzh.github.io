@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://baiks.cn/Git/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93.html</loc>
+    
+    <lastmod>2018-02-15T07:17:50.873Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://baiks.cn/Git/hexo-Git.html</loc>
+    
+    <lastmod>2018-02-15T06:23:52.410Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://baiks.cn/about/index.html</loc>
     
     <lastmod>2018-02-12T12:12:00.416Z</lastmod>
@@ -19,13 +33,6 @@
     <loc>http://baiks.cn/Java/Java%E7%BC%96%E8%AF%91%E7%9A%84%E4%B8%89%E7%A7%8D%E6%96%B9%E5%BC%8F.html</loc>
     
     <lastmod>2018-02-08T16:14:31.235Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://baiks.cn/Git/hexo-Git.html</loc>
-    
-    <lastmod>2018-02-08T15:08:40.400Z</lastmod>
     
   </url>
   

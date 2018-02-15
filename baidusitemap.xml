@@ -3,6 +3,42 @@
 
 
     
+  <url>
+    <loc>http://baiks.cn/Git/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93.html</loc>
+    <lastmod>2018-02-15T07:17:50.873Z</lastmod>
+    <data>
+        <display>
+        <title>Git常用命令总结</title>
+        <pubTime>2018-02-15T06:16:29.228Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Git" url="http://baiks.cn/categories/Git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://baiks.cn/Git/hexo-Git.html</loc>
+    <lastmod>2018-02-15T06:23:52.410Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo+GithubPage搭建个人博客（Windows）</title>
+        <pubTime>2018-02-07T13:18:34.810Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Git" url="http://baiks.cn/categories/Git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://baiks.cn/Theme/Material%20Theme%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3.html</loc>
@@ -34,24 +70,6 @@
            
              
               <breadCrumb title="Java" url="http://baiks.cn/categories/Java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://baiks.cn/Git/hexo-Git.html</loc>
-    <lastmod>2018-02-08T15:08:40.400Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo+GithubPage搭建个人博客（Windows）</title>
-        <pubTime>2018-02-07T13:18:34.810Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Git" url="http://baiks.cn/categories/Git/"/>
           
         </display>
     </data>

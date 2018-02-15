@@ -1,3 +1,4 @@
+http://baiks.cn/Git/Git常用命令总结.html
 http://baiks.cn/Theme/Material Theme使用文档.html
 http://baiks.cn/Java/Java编译的三种方式.html
 http://baiks.cn/Git/hexo-Git.html
