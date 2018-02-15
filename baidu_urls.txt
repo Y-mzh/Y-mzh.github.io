@@ -1,4 +1,4 @@
-www.baiks.cn/Theme/Material Theme使用文档.html
-www.baiks.cn/Java/Java编译的三种方式.html
-www.baiks.cn/Git/hexo-Git.html
-www.baiks.cn/hello-world.html
+http://baiks.cn/Theme/Material Theme使用文档.html
+http://baiks.cn/Java/Java编译的三种方式.html
+http://baiks.cn/Git/hexo-Git.html
+http://baiks.cn/hello-world.html
